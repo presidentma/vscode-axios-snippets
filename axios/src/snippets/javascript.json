@@ -1,0 +1,18 @@
+{
+    "axios.get request": {
+        "prefix": "axios.get",
+        "body": [
+          "axios.get('/user', {",
+             "params: {",
+                "ID: 12345",
+              "}",
+            "})",
+            ".then(function (response) {\n",
+
+           "})",
+            ".catch(function (error) {\n",
+           "})"
+        ],
+        "description": "send a get request"
+    }
+}
