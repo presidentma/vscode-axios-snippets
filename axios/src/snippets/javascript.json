@@ -1,18 +1,115 @@
 {
-    "axios.get request": {
-        "prefix": "axios.get",
-        "body": [
-          "axios.get('/user', {",
-             "params: {",
-                "ID: 12345",
-              "}",
-            "})",
-            ".then(function (response) {\n",
-
-           "})",
-            ".catch(function (error) {\n",
-           "})"
-        ],
-        "description": "send a get request"
-    }
+  "axios create": {
+    "prefix": "axios",
+    "body": [
+      "axios({",
+      "\tmethod:'post',",
+      "\turl: ${1:requestUrl},",
+      "\tdata: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})"
+    ],
+    "description": "create a axios request"
+  },
+  "axios.get request": {
+    "prefix": "axios.get",
+    "body": [
+      "axios.get(url, {",
+      "\tparams: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})",
+      ".then(function (response) {",
+      "})",
+      ".catch(function (error) {",
+      "})"
+    ],
+    "description": "send a get request"
+  },
+  "axios.post request": {
+    "prefix": "axios.post",
+    "body": [
+      "axios.post(url, {",
+      "\tparams: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})",
+      ".then(function (response) {",
+      "})",
+      ".catch(function (error) {",
+      "})"
+    ],
+    "description": "send a post request"
+  },
+  "axios.delete request": {
+    "prefix": "axios.delete",
+    "body": [
+      "axios.delete(url, {",
+      "\tparams: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})",
+      ".then(function (response) {",
+      "})",
+      ".catch(function (error) {",
+      "})"
+    ],
+    "description": "send a delete request"
+  },
+  "axios.head request": {
+    "prefix": "axios.head",
+    "body": [
+      "axios.head(url, {",
+      "\tparams: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})",
+      ".then(function (response) {",
+      "})",
+      ".catch(function (error) {",
+      "})"
+    ],
+    "description": "send a head request"
+  },
+  "axios.put request": {
+    "prefix": "axios.put",
+    "body": [
+      "axios.put(url, {",
+      "\tparams: {",
+      "\t\tid:${1:paramId}",
+      "\t}",
+      "})",
+      ".then(function (response) {",
+      "})",
+      ".catch(function (error) {",
+      "})"
+    ],
+    "description": "send a put request"
+  },
+  "axios.all([iterable])": {
+    "prefix": "axios.all",
+    "body": [
+      "axios.all([callback1,callback2])",
+      ".then(axios.spread((res1, res2)=>{",
+  "}))"
+    ],
+    "description": "Concurrent Program 并发执行多个请求 params[callback1,callback2]"
+  },
+  "axios.spread(callback)": {
+    "prefix": "axios.spread",
+    "body": [
+      ".then(axios.spread((res1, res2)=>{",
+  "}))"
+    ],
+    "description": "Concurrent Program sucessed 多个请求执行都成功后执行"
+  },
+  "axios.create([config])": {
+    "prefix": "axios.create",
+    "body": [
+      "axios.create({",
+      "})"
+    ],
+    "description": "create a axios instance"
+  }
 }
