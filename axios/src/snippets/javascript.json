@@ -111,5 +111,184 @@
       "})"
     ],
     "description": "create a axios instance"
+  },
+  "axios.CancelToken": {
+    "prefix": "axios.CancelToken",
+    "body": [
+      "axios.CancelToken"
+    ],
+    "description": "Cancele request"
+  },
+  "new CancelToken": {
+    "prefix": "new CancelToken",
+    "body": [
+     "new CancelToken(()=>{})"
+    ],
+    "description": "create a instance of CancelToken"
+  },
+  "axios.defaults": {
+    "prefix": "axios.defaults",
+    "body": [
+     "axios.defaults"
+    ],
+    "description": "axios default baseUrl setting"
+  },
+  "axios.defaults.baseURL": {
+    "prefix": "axios.defaults.baseURL",
+    "body": [
+     "axios.defaults.baseURL="
+    ],
+    "description": "axios default baseUrl setting"
+  },
+  "axios.defaults.headers": {
+    "prefix": "axios.defaults.headers",
+    "body": [
+     "axios.defaults.headers"
+    ],
+    "description": "axios default headers setting"
+  },
+  "axios.interceptors.request": {
+    "prefix": "axios.interceptors.request.use",
+    "body": [
+     "axios.interceptors.request.use(response=>{},error=>{})"
+    ],
+    "description": "intercept axios request"
+  },
+  "axios.interceptors.response": {
+    "prefix": "axios.interceptors.response.use",
+    "body": [
+     "axios.interceptors.response.use(response=>{},error=>{})"
+    ],
+    "description": "intercept axios response"
+  },
+  "proxy": {
+    "prefix": "proxy",
+    "body": [
+     "proxy:{\n}"
+    ],
+    "description": "axios config proxy"
+  },
+  "cancelToken": {
+    "prefix": "cancelToken",
+    "body": [
+     "cancelToken: new CancelToken(()=>{})"
+    ],
+    "description": "axios config cancelToken"
+  },
+  "transformRequest": {
+    "prefix": "transformRequest",
+    "body": [
+     "transformRequest[(${1:data})=>{}]"
+    ],
+    "description": "axios config transformRequest"
+  },
+  "baseURL": {
+    "prefix": "baseURL",
+    "body": [
+     "baseURL:${1:url}"
+    ],
+    "description": "axios config baseURL"
+  },
+  "paramsSerializer": {
+    "prefix": "paramsSerializer",
+    "body": [
+     "paramsSerializer:${1:param}=>{return serialize param}"
+    ],
+    "description": "axios config baseURL"
+  },
+  "xsrfCookieName": {
+    "prefix": "xsrfCookieName",
+    "body": [
+     "xsrfCookieName: 'XSRF-TOKEN'"
+    ],
+    "description": "axios config xsrfCookieName"
+  },
+  "onUploadProgress": {
+    "prefix": "onUploadProgress",
+    "body": [
+     "onUploadProgress: progressEvent=>{}"
+    ],
+    "description": "axios config onUploadProgress"
+  },
+  "onDownloadProgress": {
+    "prefix": "onDownloadProgress",
+    "body": [
+     "onDownloadProgress: progressEvent=>{}"
+    ],
+    "description": "axios config onDownloadProgress"
+  },
+  "xsrfHeaderName": {
+    "prefix": "xsrfHeaderName",
+    "body": [
+     "xsrfHeaderName: 'X-XSRF-TOKEN'"
+    ],
+    "description": "axios config xsrfHeaderName"
+  },
+  "validateStatus": {
+    "prefix": "validateStatus",
+    "body": [
+     "validateStatus: status=>{return true}"
+    ],
+    "description": "axios config validateStatus"
+  },
+  "httpsAgent": {
+    "prefix": "httpsAgent",
+    "body": [
+     "httpsAgent: new https.Agent({ keepAlive: true })"
+    ],
+    "description": "axios config httpsAgent"
+  },
+  "responseType": {
+    "prefix": "responseType",
+    "body": [
+     "responseType: 'json'"
+    ],
+    "description": "axios config responseType"
+  },
+  "withCredentials": {
+    "prefix": "withCredentials",
+    "body": [
+     "withCredentials: false"
+    ],
+    "description": "axios config withCredentials"
+  },
+  "adapter": {
+    "prefix": "adapter",
+    "body": [
+     "adapter: config=>{}"
+    ],
+    "description": "axios config adapter"
+  },
+  "auth": {
+    "prefix": "auth",
+    "body": [
+     "auth: {",
+      "username: ${1:name}",
+      "password: ${1:password}",
+    "}"
+    ],
+    "description": "axios config Authorization"
+  },
+  "maxRedirects": {
+    "prefix": "maxRedirects",
+    "body": [
+     "maxRedirects:5"
+    ],
+    "description": "axios config maxRedirects"
+  },
+  " maxContentLength": {
+    "prefix": "maxContentLength",
+    "body": [
+     "maxContentLength: ${1:length}"
+    ],
+    "description": "axios config maxContentLength"
+  },
+  " data": {
+    "prefix": "data",
+    "body": [
+     "data:{}"
+    ],
+    "description": "axios config data"
   }
+ 
 }

@@ -1,5 +1,5 @@
 {
-    "name": "axios",
+    "name": "axios-snippets",
     "displayName": "Axios Snippets",
     "description": "Axios Snippets",
     "version": "0.0.1",
@@ -10,24 +10,26 @@
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "javascript",
+        "snippet",
+        "axios",
+        "vue axios"
+    ],
     "activationEvents": [
         "onCommand:"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            },
-            {
-                "command": "extension.sayYourName",
-                "title": "YourName"
-            }
         ],
         "snippets": [
             {
                 "language": "javascript",
+                "path": "./src/snippets/javascript.json"
+            },
+            {
+                "language": "vue",
                 "path": "./src/snippets/javascript.json"
             }
         ]
